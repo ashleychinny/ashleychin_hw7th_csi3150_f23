@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.App h1 {
+  color: rgb(232, 99, 146); /* Resetting color to default */
+}
+
+.form-title {
+  color: blue; /* Same color as in SignUpForm.css */
+  padding-left: 20px; /* Same padding as in SignUpForm.css */
+}
