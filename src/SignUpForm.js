@@ -9,7 +9,7 @@ function SignUpForm() {
     address: "",
     phoneNumber: "",
   });
-  const [submittedData, setSubmittedData] = useState(null); // Store submitted data
+  const [submittedData, setSubmittedData] = useState(null); 
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -20,7 +20,7 @@ function SignUpForm() {
     e.preventDefault();
     console.log("User Data:", userData);
 
-    setSubmittedData({ ...userData }); // Store submitted data
+    setSubmittedData({ ...userData }); 
     setUserData({
       fullName: "",
       username: "",
@@ -33,7 +33,6 @@ function SignUpForm() {
   return (
     <div>
       <form className="form-container" onSubmit={handleSubmit}>
-        {/* Input fields */}
         <input
           type="text"
           name="fullName"
